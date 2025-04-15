@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Persediaan Sederhana</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .form-section {
+            border: 1px solid #ddd;
+            padding: 15px;
+            background-color: #f9f9f9;
+        }
+        .form-group {
+            margin-bottom: 10px;
+        }
+        label {
+            display: inline-block;
+            width: 120px;
+        }
+        input[type="text"], input[type="number"] {
+            padding: 5px;
+            width: 200px;
+        }
+        input[type="submit"] {
+            padding: 8px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Aplikasi Persediaan Barang</h1>
+
+        <!-- Tabel Daftar Barang -->
+        <h2>Daftar Barang</h2>
+        <table>
+            <tr>
+                <th>Kode Barang</th>
+                <th>Nama Barang</th>
+                <th>Jumlah</th>
+                <th>Satuan</th>
+                <th>Harga</th>
+            </tr>
+            <tr>
+                <td>BRG001</td>
+                <td>Beras</td>
+                <td>100</td>
+                <td>Kg</td>
+                <td>Rp 15.000</td>
+            </tr>
+            <tr>
+                <td>BRG002</td>
+                <td>Minyak Goreng</td>
+                <td>50</td>
+                <td>Liter</td>
+                <td>Rp 20.000</td>
+            </tr>
+            <tr>
+                <td>BRG003</td>
+                <td>Gula</td>
+                <td>75</td>
+                <td>Kg</td>
+                <td>Rp 12.000</td>
+            </tr>
+        </table>
+
+        <!-- Form Input Barang Baru -->
+        <h2>Tambah Barang Baru</h2>
+        <div class="form-section">
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="kode">Kode Barang:</label>
+                    <input type="text" id="kode" name="kode" required>
+                </div>
+                <div class="form-group">
+                    <label for="nama">Nama Barang:</label>
+                    <input type="text" id="nama" name="nama" required>
+                </div>
+                <div class="form-group">
+                    <label for="jumlah">Jumlah:</label>
+                    <input type="number" id="jumlah" name="jumlah" min="0" required>
+                </div>
+                <div class="form-group">
+                    <label for="satuan">Satuan:</label>
+                    <input type="text" id="satuan" name="satuan" required>
+                </div>
+                <div class="form-group">
+                    <label for="harga">Harga:</label>
+                    <input type="text" id="harga" name="harga" required>
+                </div>
+                <input type="submit" value="Tambah Barang">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
